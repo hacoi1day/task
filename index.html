@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/0355850d71.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="container-fluid">
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<div class="top">
+								<div class="left">
+									<h3 id="description" class="title"><i aria-hidden="true" class="far fa-check-circle"></i>Vụ mùa cà chua</h3>
+								</div>
+								<div class="right">
+									<div class="view">
+										<ul>
+											<!-- <li class="view-style">
+												<i id="old-month" aria-hidden="true" class="fas fa-angle-left"></i> 
+												<span id="date">06/2019</span> 
+												<i id="new-month" aria-hidden="true" class="fas fa-angle-right"></i>
+											</li> -->
+											<li class="view-style"><i aria-hidden="true" class="fas fa-list-ul"></i>List</li>
+											<li class="view-style"><i aria-hidden="true" class="fas fa-th-large"></i>Table</li>
+											<li class="view-style"><i aria-hidden="true" class="fas fa-clipboard"></i>Broad</li>
+											<li class="view-style"><i aria-hidden="true" class="far fa-check-square"></i>Member</li>
+											<li class="data-show">
+												<div class="dropdown">
+													<button type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Hiển thị <strong>Tất cả</strong></button>
+													<div aria-labelledby="dropdownMenu2" class="dropdown-menu">
+														<button type="button" class="dropdown-item">Tất cả</button>
+														<button type="button" class="dropdown-item">Từ ngày</button>
+														<button type="button" class="dropdown-item">Theo tháng</button>
+													</div>
+												</div>
+											</li>
+											<li class="add-data">
+												<div class="btn-group">
+													<button type="button" class="btn btn-success">
+														<i aria-hidden="true" class="fas fa-plus"></i>Thêm
+													</button> 
+													<button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-success dropdown-toggle dropdown-toggle-split">
+														<span class="sr-only">Toggle Dropdown</span>
+													</button> 
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item">Thêm</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div> 
+						<div id="data" class="col-12">
+							<table class="table">
+								<thead>
+									<tr class="select-month">
+										<th rowspan="2" scope="col">#</th> 
+										<th rowspan="2" scope="col">
+											<input type="checkbox">
+										</th> 
+										<th rowspan="2" scope="col">Công việc</th> 
+										<th rowspan="2" scope="col">Start</th> 
+										<th rowspan="2" scope="col">Deadline</th> 
+										<th rowspan="2" scope="col">Người làm</th> 
+										<th colspan="31" style="text-align: center;">
+											<i id="old-month" aria-hidden="true" class="fas fa-angle-left"></i> <span id="date">05/2019</span> 
+											<i id="new-month" aria-hidden="true" class="fas fa-angle-right"></i>
+										</th>
+									</tr> 
+									<tr id="day">
+										<th scope="col" class="day">We<br>01</th> 
+										<th scope="col" class="day">Th<br>02</th> 
+										<th scope="col" class="day">Fr<br>03</th> 
+										<th scope="col" class="day">Sa<br>04</th> 
+										<th scope="col" class="day">Su<br>05</th> 
+										<th scope="col" class="day">Mo<br>06</th> 
+										<th scope="col" class="day">Tu<br>07</th> 
+										<th scope="col" class="day">We<br>08</th> 
+										<th scope="col" class="day">Th<br>09</th> 
+										<th scope="col" class="day">Fr<br>10</th> 
+										<th scope="col" class="day">Sa<br>11</th> 
+										<th scope="col" class="day">Su<br>12</th> 
+										<th scope="col" class="day">Mo<br>13</th> 
+										<th scope="col" class="day">Tu<br>14</th> 
+										<th scope="col" class="day">We<br>15</th> 
+										<th scope="col" class="day">Th<br>16</th> 
+										<th scope="col" class="day">Fr<br>17</th> 
+										<th scope="col" class="day">Sa<br>18</th> 
+										<th scope="col" class="day">Su<br>19</th> 
+										<th scope="col" class="day">Mo<br>20</th> 
+										<th scope="col" class="day">Tu<br>21</th> 
+										<th scope="col" class="day">We<br>22</th> 
+										<th scope="col" class="day">Th<br>23</th> 
+										<th scope="col" class="day">Fr<br>24</th> 
+										<th scope="col" class="day">Sa<br>25</th> 
+										<th scope="col" class="day">Su<br>26</th> 
+										<th scope="col" class="day">Mo<br>27</th> 
+										<th scope="col" class="day">Tu<br>28</th> 
+										<th scope="col" class="day">We<br>29</th> 
+										<th scope="col" class="day">Th<br>30</th> 
+										<th scope="col" class="day">Fr<br>31</th>
+									</tr>
+								</thead>
+								<tbody class="session">
+									<tr data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="true" aria-controls="group-of-rows-1" class="clickable">
+										<td colspan="37"><i aria-hidden="true" class="fa fa-plus"></i>Giai đoạn 1</td>
+									</tr>
+								</tbody>
+								<tbody id="group-of-rows-1" class="stage collapse show" style="">
+									<tr>
+										<td>1</td> 
+										<td><input type="checkbox"></td> 
+										<td>Liên hệ đơn vị cartering</td> 
+										<td>01/05/2019</td> <td>05/05/2019</td> 
+										<td></td> 
+										<td class="good"></td> 
+										<td class="good"></td> <td class="good"></td> 
+										<td class="good"></td> <td class="good"></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> 
+										<td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+									</tr> 
+									<tr>
+										<td>2</td> 
+										<td><input type="checkbox"></td> 
+										<td>Liên hệ các bên báo trí</td> 
+										<td>06/05/2019</td> 
+										<td>10/05/2019</td> 
+										<td></td> <td></td> 
+										<td></td> <td></td> 
+										<td></td> <td></td> 
+										<td class="good"></td> 
+										<td class="good"></td> 
+										<td class="good"></td> 
+										<td class="good"></td> 
+										<td class="good"></td> 
+										<td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+									</tr> 
+									<tr>
+										<td>3</td> 
+										<td><input type="checkbox"></td> 
+										<td>Bố trí sơ đồ</td> 
+										<td>11/05/2019</td> 
+										<td>15/05/2019</td> 
+										<td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td class="bad"></td> <td class="bad"></td> <td class="bad"></td> <td class="bad"></td> <td class="bad"></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+									</tr>
+								</tbody> 
+	
+								
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

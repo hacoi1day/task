@@ -1,0 +1,139 @@
+/*CSS top*/
+.top {
+    background-color: #f7f7f7;
+}
+.top .left {
+    float: left;
+}
+.top .left h3.title {
+    font-weight: bold;
+    font-size: 36px;
+}
+.top .left h3.title i {
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #d3d3d3;
+}
+.top .right {
+    float: right;
+}
+.top .right div.view ul {
+    list-style-type: none;
+}
+.top .right div.view ul li.view-style {
+    float: left;
+    padding: 3px 10px;
+    margin-right: 1px;
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+    color: #555557;
+}
+/*.top .right div.view ul li.view-style:nth-child(1) i {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.top .right div.view ul li.view-style:nth-child(1) span {
+    cursor: pointer;
+}*/
+.top .right div.view ul li.view-style i {
+    margin-right: 5px;
+}
+/*data-show*/
+.view li.data-show {
+    float: left;
+    margin-left: 7px;
+}
+.view li.data-show button#dropdownMenu2 {
+    padding: 3px 10px;
+    margin-right: 1px;
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+    color: #555557;
+    background-color: transparent;
+}
+/*add-data*/
+.view li.add-data {
+    float: left;
+    margin-left: 7px;
+}
+.add-data button {
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: white;
+}
+.add-data button i {
+    margin-right: 5px;
+}
+
+tr.select-month {
+    background-color: #263c47;
+}
+
+
+tr.clickable {
+    cursor: pointer;
+}
+tr.clickable td i {
+    margin-right: 15px;
+}
+table thead tr th {
+    text-align: center;
+}
+table.table thead th {
+    border-bottom: none;
+}
+/*CSS frozen left column*/
+.headcol {
+  position: absolute;
+  width: 5em;
+  left: 0;
+  top: auto;
+}
+
+/*CSS Color*/
+table thead {
+    background-color: #00b1dd;
+    color: white;
+    font-style: normal;
+}
+table thead tr th {
+    text-transform: uppercase;
+}
+table thead tr.select-month  th i {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+tbody.session {
+    background-color: #ebebeb;
+    color: #555557;
+}
+tbody.session td {
+    font-weight: bold;
+    font-size: 16px;
+}
+tbody.stage {
+    color: #4e4f53;
+}
+tbody.stage td:nth-child(1),
+tbody.stage td:nth-child(2),
+tbody.stage td:nth-child(3),
+tbody.stage td:nth-child(4),
+tbody.stage td:nth-child(5),
+tbody.stage td:nth-child(6) {
+    line-height: 15px;
+}
+tbody.stage td:nth-child(3) {
+    display: inline-block;
+    width: 300px;
+}
+
+.Normal {
+    background-color: #8dc15c;
+    width: 100%;
+}
+.Critical {
+    background-color: #ef7373;
+    width: 100%;
+}
