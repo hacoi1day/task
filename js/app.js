@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	sSource = 'https://api.nextfarm.vn/api/crop/overview?cropid=1&fromdate=2019-01-01&todate=2019-10-01';
-	// loadAjaxTask(sSource);
+	sSource = 'https://api.nextfarm.vn/api/crop/overview?cropid=1&fromdate=2019-01-01&todate=2019-01-31';
+	loadAjaxTask(sSource);
 	/**
 	 * [loadAjaxTask gọi API và thực hiện in ra bảng dữ liệu]
 	 * @param  {[type]} url [url]
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	        type: 'GET',
 	        dataType: 'json',
 	        headers: {
-	        	'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLm5leHRmYXJtLnZuXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYwODIwNzM0LCJleHAiOjE1NjA4NTY3MzQsIm5iZiI6MTU2MDgyMDczNCwianRpIjoiSUZkNkxEV2ZEMGVqcksxQyIsInN1YiI6MjEsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQifQ.vpI2Z8jdDQG3vu2fp29Vsf6CWy8DAmo1yZXsMotRHXs'
+	        	'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLm5leHRmYXJtLnZuXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYwODc4MTg5LCJleHAiOjE1NjA5MTQxODksIm5iZiI6MTU2MDg3ODE4OSwianRpIjoiOHdyaUxsaEpFUXN6N3dzTSIsInN1YiI6MjEsInBydiI6Ijk0ZGJkOTYxYWFlZjBlM2NlNjZhZDdkNTBlNjQ3NzE3NjA5ZGRhMjQifQ.0ECBsP64nU3KJ29mHa9D7q9C1L8x5ZIAyPv8mdHyJE4'
 	       	},
 	    })
 		.done(function(response) {
